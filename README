@@ -1,0 +1,42 @@
+Hostnet Dead File Color Plugin for Eclipse
+This plug-in can be used to decorate the files
+and directories in the navigator with a color
+ranging from green to red depending on the value
+in a colors.txt file.
+
+This plug-in is created as companion for the
+dead code identification tools for PHP but can
+also be used with any other tool that creates
+a colors.txt file.
+
+If colors.txt is placed in the project root
+it will be loaded automatically. The format
+of the file is quite simple.
+
+Every line contains a directory of file with
+relative path to the project root folder. The
+line starts with the percentage of dead / unused
+files in the folder followed by a space and the
+file path.
+
+Example colors.txt:
+25 /
+50 app
+50 app/blog
+0 app/blog/category_app.php
+100 app/blog/post_app.php
+0 index.php
+0 url.php
+
+The toolbox to measure dead code and create color.txt
+files can also be found at Hostnets GitHub Page.
+http://www.github.com/hostnet
+
+===================================================================
+*        Op zoek naar een baan in de Software Engineering?        *
+*        Hostnet is nog op zoek naar nieuwe ontwikkelaars.        *
+*                                                                 *
+*   Kijk voor meer informatie op:                                 *
+*   http://www.hostnet.nl/vacatures/vacature-front-end-developer  *
+*   http://www.hostnet.nl/vacatures/vacature-back-end-developer   *
+===================================================================
